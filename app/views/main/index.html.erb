@@ -1,0 +1,34 @@
+<!-- <table style="width: 100%">
+  <tr>
+    <td>Balance</td>
+    <td>Username</td>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Display Name</td>
+    <td>Is Friend</td>
+    <td>Friend Count</td>
+    <td>About</td>
+    <td>Email</td>
+    <td>Phone</td>
+    <td>Profile Picture</td>
+    <td>Id</td>
+    <td>Date Joined</td>
+  </tr>
+  <tr>
+    <td><%= @info[:balance] %></td>
+    <td><%= @info[:user][:username] %></td>
+    <td><%= @info[:user][:first_name] %></td>
+    <td><%= @info[:user][:last_name] %></td>
+    <td><%= @info[:user][:display_name] %></td>
+    <td><%= @info[:user][:is_friend] %></td>
+    <td><%= @info[:user][:friends_count] %></td>
+    <td><%= @info[:user][:about] %></td>
+    <td><%= @info[:user][:email] %></td>
+    <td><%= @info[:user][:phone] %></td>
+    <td><%= @info[:user][:profile_picture_url] %></td>
+    <td><%= @info[:user][:id] %></td>
+    <td><%= @info[:user][:date_joined] %></td>
+  </tr>
+</table> -->
+<p><%= @info.to_json.html_safe -%></p>
+<p><%= @friends.to_json.html_safe -%></p>
