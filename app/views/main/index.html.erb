@@ -1,4 +1,26 @@
+<h2>User</h2>
 <p><%= @info.to_json.html_safe -%></p>
+
+<h2>Friends</h2>
 <p><%= @friends.to_json.html_safe -%></p>
+
+<h2>Other User via @user</h2>
 <p><%= @other_user.to_json.html_safe -%></p>
-<p><%= @payment.data.to_json.html_safe -%></p>
+<p><%- @other_user_client.to_json.html_safe -%></p>
+
+<h2>Payment 1 (post response)</h2>
+<p><%= @payment.to_json.html_safe -%></p>
+
+<h2>Payment 2 (get)</h2>
+<p><%= @payment2.to_json.html_safe -%></p>
+<p><%- @payment2_client.to_json.html_safe -%></p>
+
+<h2>Recent Payments</h2>
+<p><%= @recent_payments.to_json.html_safe -%></p>
+<p><%- @recent_payments_client.to_json.html_safe -%></p>
+
+<style>
+p {
+  margin-bottom: 10px;
+}
+</style>
