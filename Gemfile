@@ -39,4 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 
-gem 'venmo-api'
+gem 'venmo-api', '~> 0.0.3'

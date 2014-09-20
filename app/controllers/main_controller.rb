@@ -9,8 +9,8 @@ class MainController < ApplicationController
 
       @payment = @user.make_payment ({ :note => 'A message to accompany the payment.', :amount => '0.10', :user_id => 145434160922624933 })
 
-      @payment2 = @user.get_payment 1322585332520059420
-      @payment2_client = Venmo.get_payment 1322585332520059420, @user.access_token
+      @payment2 = @user.get_payment 1513344862190043372
+      @payment2_client = Venmo.get_payment 1513344862190043372, @user.access_token
 
       @recent_payments = @user.get_recent_payments
       @recent_payments_client = Venmo.get_recent_payments @user.access_token
